@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>STYLING-LINKS</title>
+    <style>
+        .main {
+            margin: 0 auto;
+            position: relative;
+            padding: 15px;
+        }
+
+        a:link {
+            border: 3px solid red;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        a:visited {
+            border: 3px solid #ee5e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border: 3px solid blue;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum beatae, quis quibusdam ab est, iure
         voluptatum placeat magni neque nobis esse quia perferendis quod modi debitis vel fuga nam.</p>
-    <div>
+    <div class="main">
         <a href="http://www.google.com.tr" target="_blank">Go the Google</a>
     </div>
 </body>
