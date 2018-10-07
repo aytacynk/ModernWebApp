@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| Pseudo |</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        a{
+            border:2px solid #494949;
+            background-color: white;
+            padding: 5px;
+            font-size: 16pt ;
+            text-decoration: none;
+            font-weight: bold;
+            color:black;
+            border-radius: 4px;
+        }
+        /* Seudo Class'ların kullanımları */
+        a:hover{
+            background-color: #494949;
+            color: white;
+        }
+        input[type="text"]{
+            border:2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    
+        input[type="text"]:focus{
+            border-color: red;
+            box-shadow: 0px 0px 5px red;
+        }
+
+        li:first-child{
+            font-weight: bold;
+        }
+        li:last-child{
+            color: red;
+        }
+        li:nth-child(2){
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div>
+    <a href="#">Click Me!</a>
+</div>
+
+<div>
+    <input type="text" placeholder="type a message">
+</div>
+
+<hr>
+
+<ul>
+    <li>
+        <p>Lorem ipsum dolor sit.</p>
+    </li>
+    <li>
+        <p>Illo omnis eius laboriosam</p>
+    </li>
+    <li>
+        <p>Deleniti deserunt illum in.</p>
+    </li>
+</ul>
+<ol>
+    <li>
+        <p>Lorem ipsum dolor sit.</p>
+    </li>
+    <li>
+        <p>Illo omnis eius laboriosam.</p>
+    </li>
+    <li>
+        <p>Deleniti deserunt illum in.</p>
+    </li>
+</ol>
+
+</html>
