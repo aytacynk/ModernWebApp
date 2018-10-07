@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Element</title>
+    <style>
+        p::first-letter {
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        h1::after {
+            content: url(https://www.iconfinder.com/data/icons/website-kit-2/512/icon_287-48.png);
+        }
+
+        h1::before {
+            content:url(https://www.iconfinder.com/data/icons/website-kit-2/512/icon_287-48.png);
+        }
+        ::selection{
+            background-color: yellow;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit, aperiam dolore iusto ipsa
+            corrupti ab delectus molestiae voluptatibus placeat, doloribus ex exercitationem atque vero.</p>
+        <p>Culpa unde voluptatibus praesentium minima in delectus aperiam reiciendis et? Qui, doloremque saepe? Eveniet
+            natus quisquam reiciendis consequuntur cumque sequi ad, laboriosam earum. Cumque, soluta?</p>
+    </div>
+</body>
+
+</html>
