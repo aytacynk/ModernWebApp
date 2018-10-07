@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Selectors</title>
+    <style>
+        a[target] {
+            margin: 10px;
+            border: 2px solid #484848;
+            padding: 7px;
+            font-weight: bold;
+            font-size: 12pt;
+            color: black;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        a[target="_blank"] {
+            color: #c4c40d;
+        }
+
+        a:hover {
+            color: white;
+            border: 2px solid #ddd;
+            background-color: #3d3c3c;
+        }
+
+        /* p elementlerinden  title="paragraph-1" yazanlara uygulama*/
+        p[title~="paragraph-1"] {
+            font-weight: bold;
+        }
+
+        /* class attribute ile başlayıp class'ı item ile başlayanlara uygulanır*/
+        ul li[class|="item"] {
+            color: red;
+        }
+
+
+        /* class attribute ile başlayıp class'ı adı içerisinde adı 'item' içerenlere uygulanır*/
+        ol li[class^="item"] {
+            color: red;
+        }
+
+        /*  p elementlerinin class attribute'lerinin class'ı adı 'para' ile bitenlere uygulanır*/
+        p[class$="para"] {
+            color: green;
+        }
+
+        /*  p elementlerinin title attribute'lerinin adı 'erik' başta sonda ortada olması farketmeden  uygulanır*/
+        p[title*="erik"]{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="example1">
+        <a href="#" target="_blank">Link-1</a>
+        <a href="#" target="_self">Link-2</a>
+        <a href="#" target="_blank">Link-3</a>
+    </div>
+    <hr>
+    <div>
+        <p title="paragraph-1">Lorem ipsum dolor sit amet.</p>
+        <p title="paragraph-2">Perspiciatis ex veniam aliquam necessitatibus!</p>
+        <p title="paragraph-3">Unde eligendi totam quos minima.</p>
+    </div>
+    <div>
+        <ul>
+            <li class="textitem">Lorem, ipsum dolor.</li>
+            <li class="item-1">Assumenda, consequatur vel!</li>
+            <li class="list-item">Voluptatem, voluptas quidem.</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <li class="textitem">Lorem, ipsum dolor.</li>
+            <li class="item-1">Assumenda, consequatur vel!</li>
+            <li class="list-item">Voluptatem, voluptas quidem.</li>
+        </ol>
+    </div>
+
+
+    <div>
+        <p class="pp1 para">Lorem ipsum dolor sit amet.</p>
+        <p class="pp2 paraitem">Alias ipsum blanditiis expedita vero.</p>
+        <p class="pp1 paraitempara">Doloremque illo voluptatibus beatae eveniet.</p>
+    </div>
+
+    <div>
+        <p title="icerik">Lorem ipsum dolor sit amet.</p>
+        <p title="erik">Alias ipsum blanditiis expedita vero.</p>
+        <p title="tterik">Doloremque illo voluptatibus beatae eveniet.</p>
+    </div>
+</body>
+
+</html>
