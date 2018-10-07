@@ -12,7 +12,7 @@ div {
     background-color: azure;
     position: sticky;
     position: -webkit-sticky;
-    /* safari IE için */
+    /* safari IE için; Ekrana dururlar. Scrool çekildiğinde yapışma görevine geçerler.*/
 }
 
 /* ul {
