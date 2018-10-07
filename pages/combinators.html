@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| Combinators |</title>
+    <style>
+        /* descendants (torun) selectors */
+        div p {
+            font-weight: bold;
+            color: orange;
+        }
+
+        /* child(çocuk) selectors */
+        div>p {
+            text-decoration: underline;
+        }
+
+        /* adjasant(btişik) sibling selector */
+        div+p {
+            color: red;
+        }
+
+        /* general sibling selector */
+        div~p {
+            font-style: italic;
+        }
+
+        /* div olup class="paraf" olanlara uygula demektir. */
+        div.paraf{
+
+        }
+
+        /* div ulnin altında ki  class="list" olanlara uygula demektir. */
+        div ul.list{
+
+        }
+
+        /* div ul nin altındaki li olup class="paraf" olanlara uygula demektir. */
+        div ul li .paraf{
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi, error debitis, cum reiciendis minima sequi
+        nesciunt officiis molestias at accusantium maxime. Natus repellat aliquid consequuntur architecto labore, eaque
+        in.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Adipisci amet voluptatum at non!</li>
+            <li>Accusantium dolor explicabo tenetur dolore!</li>
+            <li>Magni officiis doloribus voluptas soluta.</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus sequi ex perspiciatis aliquam
+            molestias repudiandae? Necessitatibus, laudantium tempore adipisci neque id error aut eius omnis voluptas
+            sint! Veniam, voluptate?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus magnam ipsam ullam aliquid?
+        Consequatur in voluptatem fugiat neque dolores non delectus praesentium labore, corporis impedit, iusto, optio
+        laborum explicabo.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, tempora? Ullam animi, deserunt veniam
+        aliquid veritatis eum labore quo sequi, cupiditate possimus error. Necessitatibus optio qui eligendi sint
+        ducimus unde.</p>
+</body>
+
+</html>
