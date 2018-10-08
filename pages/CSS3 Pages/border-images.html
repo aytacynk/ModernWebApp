@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Border-Images</title>
+    <style>
+        input[type="text"]{
+            border: 3px solid #84aae4b6;
+            padding: 6px;
+        }
+        input[type="text"]:focus{
+            box-shadow: 1px 2px 3px black;
+        }
+        #btnClick{
+            border: 1px solid white;
+            color: white;
+            padding: 6px;
+            background-color: black;
+            font-size: 13pt;
+            font-family: fantasy;
+        }
+        #btnClick:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .box1{
+            border: 10px solid transparent;
+            padding: 15px;
+            width: 78px;
+            border-image: url(border.png) 30 round;
+            -webkit-border-image: url(border.png) 30 round;  /* safari için*/ 
+            -o-border-image: url(border.png) 30 round;      /* opera için*/           
+        }
+    </style>
 </head>
 
 <body>
-    
+    <input type="text" name="" placeholder="Enter A name" id="">
+    <hr>
+    <button id="btnClick" type="button">Click Me!</button>
+    <hr>
+    <hr>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum cupiditate voluptatem,
+        repudiandae molestias quo.</div>
 </body>
 
 </html>
