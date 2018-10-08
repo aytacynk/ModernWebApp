@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BORDER-RADIUS</title>
+    <style>
+        #box1 {
+            -webkit-border-radius: 25px;
+            -o-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        #box2 {
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        #box3 {
+            /* -webkit-border-radius: 25px;
+            -o-border-radius: 25px;
+            -moz-border-radius: 25px; */
+            /* border-bottom-left-radius: 25px; */
+            border-radius: 5px 10px 15px 20px; /*Saat yönünde ilerler kenarların yuvarlanmaları*/
+            border: 2px solid #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">Lorem ipsum dolor sit amet consectetur.</div>
+    <hr>
+    <div id="box2">Lorem ipsum dolor sit amet consectetur.</div>
+    <hr>
+    <div id="box3">Lorem ipsum dolor sit amet consectetur.</div>
+
+</body>
+
+</html>
