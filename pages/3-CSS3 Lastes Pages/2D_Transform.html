@@ -6,10 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>| 2D Transform |</title>
+    <style>
+        .box {
+            border: 2px solid #000;
+            width: 150px;
+            background-color: rgb(18, 108, 192);
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Tahoma';
+            margin: 50px;
+
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            -moz-transition: all 1s;
+            transition: all 1s; /*Transform ile transition'da kullanılmalı çünkü yavaş geçmesi gerekmesi lazım*/
+        }
+
+        .box:hover {
+            -ms-transform: matrix(-1, 0.3, 0, 1, 0, 0);
+            -webkit-transform: matrix(-1, 0.3, 0, 1, 0, 0);
+            transform: matrix(-1, 0.3, 0, 1, 0, 0);
+        }
+
+        .box:hover {
+            -ms-transform: translate(30px, 70px);
+            -webkit-transform: translate(30px, 70px);
+            transform: translate(30px, 70px);
+        }
+
+        .box:hover {
+            -ms-transform: rotate(25deg);
+            -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+        }
+
+        /*EN g]zel transform örneği budur****************************/
+        .box:hover {
+            -ms-transform: scale(1.2, 1.5);
+            -webkit-transform: scale(1.2, 1.5);
+            transform: scale(1.2, 1.5);
+        }
+
+        .box:hover {
+            -ms-transform: skewX(15deg);
+            -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+        }
+
+        .box:hover {
+            -ms-transform: skewY(15deg);
+            -webkit-transform: skewY(15deg);
+            transform: skewY(15deg);
+        }
+
+        .box:hover {
+            -ms-transform: skew(15deg, 25deg);
+            -webkit-transform: skew(15deg, 25deg);
+            transform: skew(15deg, 25deg);
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo nesciunt commodi, iste,
+        aliquid reiciendis ratione, vitae aperiam nam ea est reprehenderit repellat! Consequuntur, incidunt obcaecati
+        illo reiciendis cum ut?</div>
 </body>
 
 </html>
