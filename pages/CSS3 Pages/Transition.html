@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| TRANSITION |</title>
+    <style>
+        .box {
+            border: 2px solid #000;
+            width: 150px;
+            height: 250px;
+            background-color: rgb(18, 108, 192);
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Tahoma;
+            margin: 50px;
+
+            /* -webkit-transition: width 1s, height 2s;
+            -o-transition: width 1s, height 2s;
+            -moz-transition: width 1s, height 2s;
+            transition: width 1s, height 2s; */
+
+
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            -moz-transition: all 1s;
+            transition: all 1s;
+            /*GEçişler için yapılan işlemlerdir.*/
+            /*https://matthewlein.com/tools/ceaser*/
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa est corporis at magnam neque
+        sed quos ducimus eum vero.</div>
+</body>
+
+</html>
