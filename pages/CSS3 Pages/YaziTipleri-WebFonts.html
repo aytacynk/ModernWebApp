@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+     <!--Bu ise standart yöntem hiç bir şey yapmaya gerek kalmaz. -->
+    <title>| CSS3 WEB FONTS |</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lobster'); /* Böyle yazılarak, googleServer üzerinden çekilir. */
+
+        /* BU tarzda yazılarak font tanımalaması yapılır. Font indirilerek*/
+        @font-face {
+            font-family: 'Lobster-Regular';
+            src: url(Lobster-Regular.ttf);
+        }
+
+        body {
+            font-family: 'Lobster-Regular';
+            font-size: 15pt;
+            font-weight: 700;
+            /* normal, bold, 100-900 */
+            font-style: italic;
+            /* oblique => daha fazla yatık */
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem adipisci, harum reprehenderit voluptatum,
+        natus deleniti dignissimos eaque expedita ab debitis consequuntur et ad quod amet necessitatibus consequatur
+        non neque eos culpa dolorum! Consequuntur aut vitae modi id facilis harum ipsum veritatis ducimus excepturi
+        commodi soluta eum, eius ad. Consequuntur, laudantium.</p>
+    <p>Nesciunt porro incidunt aperiam magni alias dolore iure quisquam unde consequatur distinctio deleniti dolorum
+        quidem, natus autem atque velit dolores ad iste cupiditate sunt cum! Deleniti commodi veritatis, animi
+        accusantium doloribus nesciunt tenetur vel illo velit amet quasi quos, ea ipsa! Mollitia nostrum aspernatur
+        explicabo laudantium quibusdam eligendi at pariatur.</p>
+</body>
+
+</html>
