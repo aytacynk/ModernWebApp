@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| 3D Transform |</title>
+    <style>
+        .box {
+            width: 150px;
+            border: 2px solid #000;
+            background-color: rgb(18, 108, 192);
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Tahoma';
+            margin: 50px;
+
+            transition: all 1s;
+        }
+
+        .box:hover {
+            /* -webkit-transform: rotateX(150deg);
+            -o-transform: rotateX(150deg);
+            -moz-transform: rotateX(150deg);
+            transform: rotateX(150deg);
+
+            -webkit-transform: rotateY(150deg);
+            -o-transform: rotateY(150deg);
+            -moz-transform: rotateY(150deg);
+            transform: rotateY(150deg);
+
+            -webkit-transform: rotateZ(150deg);
+            -o-transform: rotateZ(150deg);
+            -moz-transform: rotateZ(150deg);
+            transform: rotateZ(150deg); */
+
+            -webkit-transform: rotateX(150deg) rotateY(120deg) rotateZ(100deg);
+            -o-transform: rotateX(150deg) rotateY(120deg) rotateZ(100deg);
+            -moz-transform: rotateX(150deg) rotateY(120deg) rotateZ(100deg);
+            transform: rotateX(150deg) rotateY(120deg) rotateZ(100deg);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum neque, consectetur eveniet
+        reiciendis, delectus nesciunt enim fugit vel non nam architecto et molestias magnam natus aspernatur doloribus
+        perspiciatis aut numquam!</div>
+</body>
+
+</html>
