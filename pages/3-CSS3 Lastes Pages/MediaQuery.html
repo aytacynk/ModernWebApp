@@ -13,11 +13,19 @@
             body {
                 color: red;
             }
+
+            footer {
+                display: none;
+            }
         }
 
         @media screen and (min-width:450px) and (max-width:550px) {
             body {
                 color: green;
+            }
+
+            footer {
+                display: none;
             }
         }
 
@@ -25,17 +33,33 @@
             body {
                 color: yellow;
             }
-        }
 
-        @media speech and (min-width:650px) { /* Ekran okuma zamanında yapılacak durumdur.*/
-            body {
-                color: purple;
+            footer {
+                display: none;
             }
         }
 
-        @media print { /* Yazdırma Ekranının ayarlanmasını yapar.*/
+        @media speech and (min-width:650px) {
+
+            /* Ekran okuma zamanında yapılacak durumdur.*/
+            body {
+                color: purple;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+
+        @media print {
+
+            /* Yazdırma Ekranının ayarlanmasını yapar.*/
             body {
                 color: aqua;
+            }
+
+            footer {
+                display: block;
             }
         }
     </style>
@@ -47,6 +71,9 @@
             molestiae porro harum minima, minus quibusdam eligendi asperiores repudiandae quo! Voluptas eum nostrum
             libero praesentium reprehenderit!</p>
     </div>
+    <footer>
+        Tüm Hakları saklıdır.
+    </footer>
 </body>
 
 </html>
