@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| MEDIA QUERIES |</title>
+    <style>
+        /* media query'ler bir sayfanın boyutlanmasına göre o sayfaya özgü değişiklikler gösterilmesinde kullanılırlar. */
+
+        @media screen and (max-width:450px) {
+            body {
+                color: red;
+            }
+        }
+
+        @media screen and (min-width:450px) and (max-width:550px) {
+            body {
+                color: green;
+            }
+        }
+
+        @media screen and (min-width:550px) and (max-width:650px) {
+            body {
+                color: yellow;
+            }
+        }
+
+        @media speech and (min-width:650px) { /* Ekran okuma zamanında yapılacak durumdur.*/
+            body {
+                color: purple;
+            }
+        }
+
+        @media print { /* Yazdırma Ekranının ayarlanmasını yapar.*/
+            body {
+                color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus provident labore rem. Beatae ullam
+            molestiae porro harum minima, minus quibusdam eligendi asperiores repudiandae quo! Voluptas eum nostrum
+            libero praesentium reprehenderit!</p>
+    </div>
+</body>
+
+</html>
