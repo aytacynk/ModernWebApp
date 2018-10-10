@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| FLIP CARD |</title>
+    <style>
+        body {
+            font-family: Tahoma;
+            color: rgb(216, 216, 216);
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .container {
+            width: 200px;
+            height: 260px;
+            position: relative;
+            perspective: 800px;
+            /* Üzerinde çalışılacak alan anlamındadır.*/
+            margin: 50px;
+        }
+
+        #card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        #card div {
+            margin: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: justify;
+            padding: 15px;
+            border: 5px solid #000;
+        }
+
+        #card .front {
+            background: rgb(21, 103, 136);
+        }
+
+        #card .back {
+            background: rgb(100, 100, 112);
+            transform: rotateY(180deg);
+        }
+
+        #card {
+            transform-origin: right center;
+        }
+
+        #card:hover {
+            transform: translateX(-100%) rotateY(-180deg);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div id="card">
+            <div class="front">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste quisquam rerum dolore hic
+                    voluptates </p>
+            </div>
+            <div class="back">
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum laborum quod?</p>
+                <p>Unde animi nihil exercitationem natus provident fugit sint id, veritatis quas. Aspernatur.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
