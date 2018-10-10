@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| ANIMATIONS |</title>
+    <style>
+        .box {
+            width: 150px;
+            border: 2px solid #000;
+            background-color: rgb(18, 108, 192);
+            position: absolute;
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Tahoma;
+            margin: 50px;
+        }
+
+        /* Animasyon tanımlanma ifadesi böyle olur: Sürekli animasyonun tekrar edilmesini sağlar. */
+        /* @keyframes boyutlandir {
+            from {
+                width: 150px;
+            }
+
+            to {
+                width: 250px;
+            }
+        } */
+
+        /* @keyframes boyutlandir {
+            0% {
+                width: 150px;
+            }
+
+            25% {
+                width: 175px;
+            }
+
+            50% {
+                width: 200px;
+            }
+
+            75% {
+                width: 225px;
+            }
+
+            100% {
+                width: 250px;
+            }
+        } */
+        
+        @keyframes boyutlandir{
+            0%{width: 150px; background-color: rgb(18, 108, 192,1.0);}
+            25%{width: 175px; background-color: rgb(18, 108, 192,1.0);}
+            50%{width: 200px; background-color: rgb(18, 108, 192,1.0);}
+            75%{width: 225px; background-color: rgb(18, 108, 192,1.0);}
+            100%{width: 250px; background-color: rgb(18, 108, 192,1.0);}
+        }
+
+        .box:hover {
+            animation-name: boyutlandir;
+            animation-duration: 4s; /* Animasyon Süresi */
+            animation-delay: 2s; /* Gecikme Süresi */
+            animation-iteration-count: 3; /* Animasyon tekrarlama süresi */
+            animation-direction: reverse;/* Animasyon yönünü */
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed eligendi explicabo vel
+        impedit esse earum, deserunt laudantium corporis expedita corrupti quod culpa consectetur facere exercitationem
+        quibusdam ullam amet doloribus! Dolor eum in ratione accusantium exercitationem quos nulla temporibus cumque.
+        Iure, quaerat! Libero tempora dolorem fuga qui vel quasi autem.</div>
+</body>
+
+</html>

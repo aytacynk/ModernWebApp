@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>SAMPLE PAGE</title>
+    <style>
+        #btnMe {
+            border: 2px solid black;
+            color: black;
+            padding: 8px;
+            margin: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #btnMe:hover {
+            border: 2px solid black;
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#btnMe').click(function () {
+                $('#header').addClass('rollIn');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h2 id="header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse.</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos ullam, doloribus quasi pariatur
+        distinctio deleniti architecto eum rerum non laudantium aspernatur dolor assumenda nesciunt veritatis suscipit
+        accusamus, ea voluptatum!
+    </div>
+    <hr>
+    <a href="#" id="btnMe">Click Me!</a>
+</body>
+
+</html>
